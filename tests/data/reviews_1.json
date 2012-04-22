@@ -1,0 +1,202 @@
+[
+	{
+		"title"		:	"The best google tasks app",
+		"rating"	:	5,
+		"author"	:	"The Undergrounder",
+		"version"	:	"1.6.2",
+		"date"		:	"11.04.2012",
+		"text"		:	"This is the best free google tasks app I could find."
+	},
+	{
+		"title"		:	"La meilleure app To do",
+		"rating"	:	5,
+		"author"	:	"Anonymous",
+		"version"	:	null,
+		"date"		:	"11.04.2012",
+		"text"		:	"Après avoir essayé plusieurs applications différentes pour Google Tasks, d'avoir même essayer Wunderlist et Wunderkit, je reviens toujours à cette application. Simple, efficace et gratuite!!! Quoi de mieux? Si vous utilisez beaucoup les services Google (Gmail, Agenda, etc...), vous allez adorer c'est certain. Ne perdez pas votre temps comme moi à en essayer plusieurs qui ne valent pas la peine, celle-là c'est la meilleure!"
+	},
+	{
+		"title"		:	"Best free App",
+		"rating"	:	5,
+		"author"	:	"iSpeaketh",
+		"version"	:	"1.6.2",
+		"date"		:	"01.03.2012",
+		"text"		:	"Works as advertized. Very easy to use. A very useful app if you use Google or Google Apps for keeping track of tasks. The most heavily used free app I have. It will be great if it syncs in the background like contacts and calendars."
+	},
+	{
+		"title"		:	"Great!",
+		"rating"	:	5,
+		"author"	:	"Toope",
+		"version"	:	"1.6.2",
+		"date"		:	"21.02.2012",
+		"text"		:	"Seamless. One bonus=reminders!!"
+	},
+	{
+		"title"		:	"Simply a fantasic App!",
+		"rating"	:	5,
+		"author"	:	"Qstorm11",
+		"version"	:	"1.6.2",
+		"date"		:	"03.02.2012",
+		"text"		:	"Seemlessly syncs between all my devices."
+	},
+	{
+		"title"		:	"Nice.",
+		"rating"	:	5,
+		"author"	:	"mitjakicha",
+		"version"	:	"1.6.2",
+		"date"		:	"13.01.2012",
+		"text"		:	"UPDATED REVIEW: The app has grown in all the right ways since I've last used it. I left a review for what appears to be an old version now, and the app changed so much I didn't even recognize it. Very functional, clean and thought out UI; great features. Love that it syncs with Google tasks. All this functionality and improvement surely deserves a much prettier icon :).\n\nThanks for the hard work, and спасибо что нет рекламы, пока что, во всяком случае :)"
+	},
+	{
+		"title"		:	"Pretty Cool!",
+		"rating"	:	5,
+		"author"	:	"ebangjang",
+		"version"	:	"1.6.2",
+		"date"		:	"19.11.2011",
+		"text"		:	"Pretty cool program!  I love the interaction between my Google account on my computer and my iphone.  Now I can type a task on my computer and it will go to my iphone (and vice versa).  You don't get that type of interaction with the iphone Reminder program.  And last but not least....  it's FREE!  can't beat the price!"
+	},
+	{
+		"title"		:	"Supper Dupper",
+		"rating"	:	5,
+		"author"	:	"Zyn21",
+		"version"	:	"1.6.2",
+		"date"		:	"03.11.2011",
+		"text"		:	"Love this app"
+	},
+	{
+		"title"		:	"Excellent!",
+		"rating"	:	5,
+		"author"	:	"rduval",
+		"version"	:	"1.6.2",
+		"date"		:	"02.10.2011",
+		"text"		:	"Would be perfect except pinch doesn't always create a be task but I'm nit-picking"
+	},
+	{
+		"title"		:	"Perfect",
+		"rating"	:	5,
+		"author"	:	"Shinigamibob",
+		"version"	:	"1.6.1",
+		"date"		:	"20.09.2011",
+		"text"		:	"Considering the amount if features this has, this app is amazing... Especially since this is free."
+	},
+	{
+		"title"		:	"Simply great.",
+		"rating"	:	5,
+		"author"	:	"NoSupporttttt",
+		"version"	:	"1.6.1",
+		"date"		:	"16.09.2011",
+		"text"		:	"(iPad) Helps me keep track of multiple lists. Syncs flawlessly with my Gmail account. HIGHLY recommended."
+	},
+	{
+		"title"		:	"The best app here. Period!! Simple & Free.New revision has fixed ipad+iPhone issues",
+		"rating"	:	5,
+		"author"	:	"Anonymous",
+		"version"	:	null,
+		"date"		:	"16.09.2011",
+		"text"		:	"Love it.."
+	},
+	{
+		"title"		:	"Won't sync since update",
+		"rating"	:	1,
+		"author"	:	"Anonymous",
+		"version"	:	null,
+		"date"		:	"16.09.2011",
+		"text"		:	"Since the 1.6 update Gotasks will no longer sync with my Google account, even after deleting it and re-signing in. It just gives error 400. This needs fixing soon."
+	},
+	{
+		"title"		:	"Was a Great app but...",
+		"rating"	:	4,
+		"author"	:	"Iwakunga",
+		"version"	:	"1.6",
+		"date"		:	"31.08.2011",
+		"text"		:	"I can't log in to google with the new version. After I sign in it tells me to click here. But nothing happens. Help!!!"
+	},
+	{
+		"title"		:	"Perfect",
+		"rating"	:	5,
+		"author"	:	"Shark_jaws_1",
+		"version"	:	"1.5.1",
+		"date"		:	"19.08.2011",
+		"text"		:	"Works and free"
+	},
+	{
+		"title"		:	"Excellent app for google tasks",
+		"rating"	:	5,
+		"author"	:	"mblak",
+		"version"	:	"1.5.1",
+		"date"		:	"06.08.2011",
+		"text"		:	"I can't think of a way to improve this app. I love it."
+	},
+	{
+		"title"		:	"Great stuff!!!",
+		"rating"	:	5,
+		"author"	:	"The Goodness",
+		"version"	:	"1.5.1",
+		"date"		:	"28.07.2011",
+		"text"		:	"Perfect and simple! Just wish Google would get some sort of task sync with Outlook. But can't complain about this app as it perfectly syncs between my iOS devices."
+	},
+	{
+		"title"		:	"Five stars for effort, BUT......",
+		"rating"	:	5,
+		"author"	:	"JohnCharas",
+		"version"	:	"1.5.1",
+		"date"		:	"25.07.2011",
+		"text"		:	"Syncing almost never works on my device. Is it because of the new Google Calendar or what? It's frustrating the hell out of me!!!"
+	},
+	{
+		"title"		:	"Great app",
+		"rating"	:	5,
+		"author"	:	"EB1717",
+		"version"	:	"1.5.1",
+		"date"		:	"07.07.2011",
+		"text"		:	"Not cluttered with features but not too basic either. Powerful simple. Would like to see two level sort so I can prioritize within a top level sort."
+	},
+	{
+		"title"		:	"Brilliant!",
+		"rating"	:	4,
+		"author"	:	"JokingJockey",
+		"version"	:	"1.5.1",
+		"date"		:	"03.07.2011",
+		"text"		:	"I was waiting for something like this. Thank you for sharing it! Task synchronization is really helpful for me!"
+	},
+	{
+		"title"		:	"Bang On",
+		"rating"	:	5,
+		"author"	:	"James Dodds",
+		"version"	:	"1.5.1",
+		"date"		:	"21.05.2011",
+		"text"		:	"Straight up, solid task manager that syncs with Google tasks. Very well done!"
+	},
+	{
+		"title"		:	"It Just Works, And, Very Well!",
+		"rating"	:	5,
+		"author"	:	"onerealkewlguy",
+		"version"	:	"1.5.1",
+		"date"		:	"20.05.2011",
+		"text"		:	"I donated because I really believe that work as nice and detailed as this, deserves the support of it's users.\n\nAmazing task app that works with both gmail personal and Google Apps, even with, 2 step authentication turned on."
+	},
+	{
+		"title"		:	"Very handy",
+		"rating"	:	4,
+		"author"	:	"Anonymous",
+		"version"	:	null,
+		"date"		:	"20.05.2011",
+		"text"		:	"Best to-do list memo that I tried, just a quick question: how to add sub-tasks under a main task like the example u gave in \"feature\" ?"
+	},
+	{
+		"title"		:	"Super impressed",
+		"rating"	:	5,
+		"author"	:	"minusfive",
+		"version"	:	"1.5.1",
+		"date"		:	"14.05.2011",
+		"text"		:	"I'm super impressed by the interface choices made for this app. It's very powerful, with a ton of features without sacrificing simplicity and intuitiveness.\n\nWell done."
+	},
+	{
+		"title"		:	"I've been looking for this forever!",
+		"rating"	:	5,
+		"author"	:	"ChazMcLovin",
+		"version"	:	"1.5.1",
+		"date"		:	"13.04.2011",
+		"text"		:	"This is an absolutely flawless version of Google Tasks.  I am in heaven... One of my best and favorite apps, I use it every day.  I can't believe it's free.  Wow!!!!"
+	}
+]
