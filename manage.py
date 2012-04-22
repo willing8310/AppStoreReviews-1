@@ -54,6 +54,13 @@ def deleteSubscriber(args):
 		
 	storage.deleteSubscriber(subscriber)
 
+def listSubscribers(args):
+	storage = getStorage()
+	
+	subscribers = storage.getSubscribers(appId = args.appId)
+	for subscriber in subscribers:
+		print "%s / %s" % (subscriber.email, subscriber.appId)
+
 if __name__ == '__main__':
 	parser = argparse.ArgumentParser()
 	
@@ -61,6 +68,10 @@ if __name__ == '__main__':
 	
 	parser_subscribers = subparsers.add_parser('subscribers')
 	parser_subscribers_sub = parser_subscribers.add_subparsers()
+	
+	parser_subscribers_add = parser_subscribers_sub.add_parser('list')
+	parser_subscribers_add.add_argument('appId', type=int, help='application identifier', default = None, nargs='?')
+	parser_subscribers_add.set_defaults(func=listSubscribers)
 	
 	parser_subscribers_add = parser_subscribers_sub.add_parser('add')
 	parser_subscribers_add.add_argument('email', type=str, help='email')

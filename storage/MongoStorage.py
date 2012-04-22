@@ -105,6 +105,18 @@ class MongoStorage:
 			
 		self.subscribersCollection.remove(subscriber.rowId)
 	
+	def _subscriberFromDict(self, data):
+		if data is None:
+			return None
+			
+		subscriber = Subscriber()
+		subscriber.rowId = data["_id"]
+		subscriber.email = data["email"]
+		subscriber.appId = data["appId"]
+		subscriber.lastReviewId = data["lastReviewId"]
+		
+		return subscriber
+	
 	def getSubscriber(self, email, appId):
 		if email is None or appId is None:
 			return
@@ -116,21 +128,28 @@ class MongoStorage:
 		
 		result = self.subscribersCollection.find_one(conditions)
 		
-		subscriber = None
-		
-		if result is not None:
-			subscriber = Subscriber()
-			subscriber.rowId = result["_id"]
-			subscriber.email = result["email"]
-			subscriber.appId = result["appId"]
-			subscriber.lastReviewId = result["lastReviewId"]
-				
+		subscriber = self._subscriberFromDict(result)
+						
 		return subscriber
+	
+	def getSubscribers(self, appId = None):
+		
+		conditions = {}
+		if appId is not None:
+			conditions["appId"] = appId
+		
+		result = []
+		
+		cursor = self.subscribersCollection.find(spec = conditions).sort(u"email", pymongo.ASCENDING)
+		for data in cursor:
+			result.append(self._subscriberFromDict(data))
+			
+		return result
 	
 	def _getReviews(self, conditions = None, limit = 0):
 		reviews = []
 		
-		cursor = self.reviewsCollection.find(spec = conditions, limit = limit).sort([(u"date", pymongo.DESCENDING)])
+		cursor = self.reviewsCollection.find(spec = conditions, limit = limit).sort([(u"date", pymongo.DESCENDING), (u"order", pymongo.DESCENDING)])
 		for rawReview in cursor:
 			review = Review()
 			review.identifier = rawReview["identifier"]
