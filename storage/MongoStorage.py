@@ -9,6 +9,7 @@ from pymongo import Connection
 
 from models.Review import Review
 from models.Application import Application
+from models.Subscriber import Subscriber
 
 class MongoStorage:
 	connection = None
@@ -16,12 +17,14 @@ class MongoStorage:
 	
 	reviewsCollection = None
 	applicationsCollection = None
+	subscribersCollection = None
 	
 	def __init__(self, database, host = 'localhost', port = 27017):
 		self.connection = Connection(host, port)
 		self.db = self.connection[database]
 		self.reviewsCollection = self.db['reviews']
 		self.applicationsCollection = self.db['applications']
+		self.subscribersCollection = self.db['subscribers']
 		
 	def replaceReview(self, review):
 		if review is None:
@@ -83,6 +86,46 @@ class MongoStorage:
 			application.reviewsLastDate = result["reviewsLastDate"]
 				
 		return application
+	
+	def insertSubscriber(self, subscriber):
+		if subscriber is None:
+			return
+			
+		data = {
+			"email" : subscriber.email,
+			"appId" : subscriber.appId,
+			"lastReviewId" : subscriber.lastReviewId
+		}
+		
+		self.subscribersCollection.insert(data)
+		
+	def deleteSubscriber(self, subscriber):
+		if subscriber is None:
+			return
+			
+		self.subscribersCollection.remove(subscriber.rowId)
+	
+	def getSubscriber(self, email, appId):
+		if email is None or appId is None:
+			return
+			
+		conditions = {
+			"email" : email,
+			"appId" : appId
+		}
+		
+		result = self.subscribersCollection.find_one(conditions)
+		
+		subscriber = None
+		
+		if result is not None:
+			subscriber = Subscriber()
+			subscriber.rowId = result["_id"]
+			subscriber.email = result["email"]
+			subscriber.appId = result["appId"]
+			subscriber.lastReviewId = result["lastReviewId"]
+				
+		return subscriber
 	
 	def _getReviews(self, conditions = None, limit = 0):
 		reviews = []
