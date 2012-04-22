@@ -5,6 +5,7 @@
 '''
 
 import pymongo
+from bson.objectid import ObjectId
 from pymongo import Connection
 
 from models.Review import Review
@@ -148,10 +149,11 @@ class MongoStorage:
 	
 	def _getReviews(self, conditions = None, limit = 0):
 		reviews = []
-		
+				
 		cursor = self.reviewsCollection.find(spec = conditions, limit = limit).sort([(u"date", pymongo.DESCENDING), (u"order", pymongo.DESCENDING)])
 		for rawReview in cursor:
 			review = Review()
+			review.rowId = rawReview["_id"]
 			review.identifier = rawReview["identifier"]
 			review.author = rawReview["author"]
 			review.appId = rawReview["appId"]
@@ -166,7 +168,7 @@ class MongoStorage:
 			
 		return reviews
 		
-	def getReviews(self, appId, limit = 0, appStoreId = None, date = None):
+	def getReviews(self, appId, limit = 0, appStoreId = None, date = None, minRowId = None):
 		conditions = {
 			"appId" : appId
 		}
@@ -175,6 +177,9 @@ class MongoStorage:
 		
 		if date is not None:
 			conditions["date"] = date
+			
+		if minRowId is not None:
+			conditions["_id"] = {"$gt" : ObjectId(minRowId)}
 		
 		return self._getReviews(conditions, limit)
 			

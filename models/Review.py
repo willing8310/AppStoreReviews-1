@@ -6,6 +6,8 @@
 
 class Review:
 	
+	rowId = None
+	
 	identifier = 0
 	
 	author = None

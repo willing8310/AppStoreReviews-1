@@ -117,8 +117,16 @@ class ApplicationManager:
 		if country is None:
 			self.reviewsLastDate = None
 			
+			# i = 0
+			# total = len(appStores)
+			# progress = int((float(i) / float(total)) * 100.0)
+			# print "\r[{0}] {1}%".format('#'*(progress/10), progress)
+			
 			for country in appStores:
 				self.loadAndUpdateReviews(country, limit)
+				# i += 1
+				# progress = int((float(i) / float(total)) * 100)	
+				# print "\r[{0}] {1}%".format('#'*(progress/10), progress)
 			
 			if self.application.reviewsLastDate is None:
 				self.application.reviewsLastDate = self.reviewsLastDate
