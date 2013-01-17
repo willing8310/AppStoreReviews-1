@@ -1,7 +1,8 @@
 AppStoreReviews
 ===============
 
-Fetch and store AppStore reviews.
+Fetch and print AppStore reviews across all countries. Optionally save reviews to mongoDB.    
+It works very slow as it does fetch data sequentially.
 
 Credits
 -------
